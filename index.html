@@ -8,29 +8,33 @@
   <title>Meteorology</title>
 </head>
 <body>
-  <header class="mainhead">
-    <h1>Weather Dashboard</h1>
-  </header>
 
-  <main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
-      <div class="card">
-        <h2 class="card-header text-uppercase">Search for a city:</h2>
-        <form id="user-form" class="card-body">
-          <label class="form-label" for="city">city</label>
-          <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-          <button type="submit" class="btn">Search</button>
-        </form>
-      </div>
-
-      <div class="card">
-          <button data-language="Tampa" class="btn">Tampa</button>
-          <button data-language="Orlando" class="btn">Orlando</button>
-          <button data-language="Springhill" class="btn">SpringHill</button>
-        </div>
-      </div>
+<nav>Weather Dashboard</nav>
+<div id="container">
+  <aside>
+    <h3>Search for a City:</h3>
+    <input type="text" placeholder="San Diego">
+    <button onclick="searchCity()">Subimt</button>
+    <hr id="history">
+  </aside>
+  <main>
+    <div id="current"></div>
+    <div>
+      <h4>5-Day Forecast:</h4>
+      <div id="forecast"></div>
     </div>
+  </main>
+</div>
 
+
+
+
+
+
+
+
+
+  <script src="./assets/js/config.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
