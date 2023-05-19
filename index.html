@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Meteorology</title>
+</head>
+<body>
+  <header class="mainhead">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <h2 class="card-header text-uppercase">Search for a city:</h2>
+        <form id="user-form" class="card-body">
+          <label class="form-label" for="city">city</label>
+          <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+
+      <div class="card">
+          <button data-language="Tampa" class="btn">Tampa</button>
+          <button data-language="Orlando" class="btn">Orlando</button>
+          <button data-language="Springhill" class="btn">SpringHill</button>
+        </div>
+      </div>
+    </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
