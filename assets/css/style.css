@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-  background: linear-gradient(35deg, teal 50%, black 90%);
+  background: linear-gradient(35deg, rgb(34, 237, 176) 50%, black 90%);
   font-size: 1.5rem;
   text-align: center;
   color: white;
@@ -28,7 +28,7 @@ aside {
 }
 
 button {
-  background: rgb(10, 119, 202);
+  background: rgb(30, 239, 166);
   color: white;
   margin: 10px 0;
   border-radius: 4px;
