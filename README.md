@@ -33,7 +33,7 @@ THEN I am again presented with current and future conditions for that city
 
 ## Usage
 
-![app](assets/images/Deployedweb6.jpg)
+![app](assets/images/Deployedwebpro6.jpg)
 
 ## Links
 

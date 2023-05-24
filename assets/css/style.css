@@ -30,8 +30,9 @@ aside {
 aside button {
   background: rgb(27, 198, 249);
   color: white;
-  margin: 10px 0;
+  margin: 10px;
   border-radius: 5px;
+  width: 90%;
 }
 hr {
   background: black;
