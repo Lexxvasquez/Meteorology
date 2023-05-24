@@ -21,7 +21,7 @@ const searchCity = async () => {
   // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
   let url1 = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=imperial&q=${city}`;
   let url2 = `https://api.openweathermap.org/data/2.5/forecast?appid=${apiKey}&units=imperial&q=${city}`;
-}
+};
 
 let {
   name,
@@ -32,15 +32,13 @@ let {
 } = await (await fetch(url1)).json();
 
 currentWeatherContainer.innerHTML = `
-  <h1> ${name} (${new Date(
-  dt * 1000
-).toLocaleDateString()}) <img src="https://openweathermap.org/img/w/${icon}.png" /> </h1>
+  <h1> ${name} (${new Date(dt * 1000).toLocaleDateString()}) <img src="https://openweathermap.org/img/w/${icon}.png" /> </h1>
   <h3>Temp: ${temp} </h3>
   <h3>Humidity: ${humidity} </h3>
   <h3>Wind Speed: ${speed} </h3>
   `;
 
-let { list } = await (await fetch(url2)).json();
+let {list} = await (await fetch(url2)).json();
 
 forecast.innerHTML = "";
 
