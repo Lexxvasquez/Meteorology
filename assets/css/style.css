@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-  background: linear-gradient(35deg, rgb(34, 237, 176) 50%, black 90%);
+  background: linear-gradient(35deg, rgb(31, 218, 248) 50%, black 90%);
   font-size: 1.5rem;
   text-align: center;
   color: white;
@@ -23,33 +23,44 @@ aside {
   width: 25%;
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  margin 0 10px;
   padding: 5px;
 }
 
-button {
-  background: rgb(30, 239, 166);
+aside button {
+  background: rgb(27, 198, 249);
   color: white;
   margin: 10px 0;
-  border-radius: 4px;
+  border-radius: 5px;
 }
-
 hr {
   background: black;
   width: 100%;
 }
-
+#history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#history button {
+  background: silver;
+  color: black;
+  margin: 10px 0;
+  border-radius: 4px;
+}
 main {
   display: flex;
   flex-direction: column;
-  width: 70%;
-}
-
+  width: 75%;
+};
 #current {
-  height: 200px;
-  border-right: 2px solid black;
+  border: 2px solid black;
+  padding: 10px;
 }
-
+#current h3, h5 {
+  height: 30px;
+  margin: 10px;
+}
 #forecast {
   display: flex;
 }
